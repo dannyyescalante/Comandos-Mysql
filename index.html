@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Comandos MySQL</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="Top-Container">
+      <h1>Comandos MySQL</h1>
+    </div>
+    <div class="Middle-Container">
+      <h2>Comandos select y create</h2>
+      <li>create database __;</li>
+      <li>create table -nombre tabla- (tipo de valores a meter);</li>
+      <li>select * from -nombre tabla-;</li>
+      <li>create table -nombre tabla- as select -campos a escoger de otra tabla- from -nombre tabla-;</li>
+      <li>create table -nombre tabla- as select -campos a escoger de otra tabla- from -nombre tabla-;</li>
+      <hr>
+      <h2>Comandos create index</h2>
+      <li>create index -nombre tabla-_-nombre campo- on -nombre tabla-(nombre campo);</li>
+      <li>create unique index -nombre tabla-_-nombre campo- on -nombre tabla-(nombre campo);</li>
+      <hr>
+      <h2>Comandos alter</h2>
+      <li>alter table -nombre tabla- add -nombre campo (valor)-;</li>
+      <li>alter table -nombre tabla- add primary key(nombre campo);</li>
+      <li>alter table -nombre tabla- drop primary key;</li>
+      <li>alter table -nombre tabla- drop -nombre columna-;</li>
+      <li>alter table -nombre tabla- add constraint -nombre tabla-_nombre tabla_fk foreign key(nombre campo) references -nombre tabla(nombre campo)-;</li>
+      <h2>Por si acaso</h2>
+      <p> CREATE TABLE MyGuests (
+          id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+          firstname VARCHAR(30) NOT NULL,
+          lastname VARCHAR(30) NOT NULL,
+          email VARCHAR(50),
+          reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);
+     </p>
+    </div>
+    <div class="Bottom-Container">
+     <a  class="footer link" href="https://www.w3schools.com/php/php_mysql_intro.asp">Por si me paso de bruto</a>
+    </div>
+  </body>
+</html>
